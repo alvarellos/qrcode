@@ -1,0 +1,9 @@
+1. Run the server
+2. make api call with the URL
+3. Get the code resulted inside data folder
+
+curl -X POST \
+    --form "size=256" \
+    --form "url=https://ubbc.ch/basketball-final-4-2lm-2023-2024/" \
+    --output data/qrcode.png \
+    http://localhost:8080/generate
